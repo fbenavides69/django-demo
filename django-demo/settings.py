@@ -25,7 +25,7 @@ SECRET_KEY = 'h)vfqezdg-sujz*@#&51ppnmg*a001e$at61v!-8)ck%lmo+$u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'fbenavides69.pythonanywhere.com']
 
 
 # Application definition
@@ -51,12 +51,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'demo.urls'
+ROOT_URLCONF = 'django-demo.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'demo/templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'django-demo/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'demo.wsgi.application'
+WSGI_APPLICATION = 'django-demo.wsgi.application'
 
 
 # Database
@@ -122,7 +122,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'demo/static'),
+    os.path.join(BASE_DIR, 'django-demo/static'),
 ]
 
 if DEBUG:

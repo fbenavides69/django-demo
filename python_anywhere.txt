@@ -1,0 +1,6 @@
+## MySQL
+fbenavides69.mysql.pythonanywhere-services.com
+fbenavides69/Kim@.69wog
+
+## Python/Django Web App
+fbenavides69.pythonanywhere.com

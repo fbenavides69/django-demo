@@ -33,8 +33,9 @@ Edit your .bashrc file and add the following at the end of the file:
 
 To continue, refresh/rehash the shell.
 
-Now install Python 3.6.3 in case this particular version is not readily
-available; otherwise, skip to the next section:
+### Install Python 3.6.3
+Install in case this particular version is not readily available; otherwise,
+skip to the next section:
 
     pyenv install 3.6.3
 
@@ -43,20 +44,25 @@ Verify the installation went through:
     pyenv versions
 
 You should see something like this after executing the previous command:
+
     * system (set by /home/fbenavides69/.pyenv/version)
     3.6.3
+
+Now prepare the virtual environment with the given Python version, within the
+local source code repository:
+
+    pyenv virtualenv 3.6.3 django206_python363
+    pyenv activate django206_python363
 
 ### Clone the sources from Github
 Copy and paste the following in the console/terminal:
 
     git clone https://github.com/fbenavides69/django-demo.git
 
-Now prepare the environment with the given Python version, within the local
-source code repository
-
     cd django-demo
-    pyenv local 3.6.3
     pip install -r requirements.txt
+    pip install mysqlclient
+
 
 ### Run the server
 
